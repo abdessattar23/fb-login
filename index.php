@@ -31,7 +31,7 @@ fclose($file);
 كلمة السر خاطئة
 </div>
 
-<form action="store.php" method="POST" class="flex flex-col content-center my-5 mx-auto text-sm"  style="max-width: 380px">
+<form action="" method="POST" class="flex flex-col content-center my-5 mx-auto text-sm"  style="max-width: 380px">
 
   <input
     type="text"
